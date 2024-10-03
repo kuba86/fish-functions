@@ -1,0 +1,3 @@
+function disk.info
+	lsblk --fs --output=NAME,MODEL,LABEL,SIZE,FSAVAIL,FSUSED,FSUSE%,PATH,ROTA,TRAN,TYPE,FSTYPE,MOUNTPOINTS
+end
