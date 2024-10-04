@@ -13,11 +13,11 @@ function k.check
     function switch_context -d "argument can be one of: 'dev' or 'stg' or 'prd'"
         switch $argv[1]
             case dev
-                k config use-context ic-az-weu-csp-dev
+                k config use-context AAA
             case stg
-                k config use-context ic-az-weu-csp-stg
+                k config use-context BBB
             case prd
-                k config use-context ic-az-weu-csp-prd
+                k config use-context CCC
             case '*'
                 echo "argument can be one of: 'dev' or 'stg' or 'prd'"
         end
@@ -49,7 +49,7 @@ function k.check
 #     get "Resource Quotas" "resourcequotas"
 #     get "Endpoints" "endpoints"
 #     get "Namespaces" "namespaces"
-#     get "Nodes" "nodes"
+    get "Nodes" "nodes"
 #     get "Replica Sets" "replicasets"
 
 end
